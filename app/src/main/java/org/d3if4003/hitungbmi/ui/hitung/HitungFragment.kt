@@ -3,7 +3,6 @@ package org.d3if4003.hitungbmi.ui.hitung
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -66,11 +65,6 @@ class HitungFragment : Fragment() {
             binding.kategoriTextView.text = getString(R.string.kategori_x,
                     getKategori(it.kategori))
             binding.buttonGroup.visibility = View.VISIBLE
-        })
-
-        viewModel.data.observe(viewLifecycleOwner, {
-            if (it == null) return@observe
-            Log.d("HitungFragment", "Data tersimpan. ID = ${it.id}")
         })
     }
 
