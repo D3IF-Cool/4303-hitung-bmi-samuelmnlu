@@ -19,7 +19,8 @@ class SaranFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentSaranBinding.inflate( layoutInflater, container, false)
         updateUI(args.kategori)
-        return binding.root }
+        return binding.root
+    }
 
     private fun updateUI(kategori: KategoriBmi) {
         val actionBar = (requireActivity() as AppCompatActivity).supportActionBar

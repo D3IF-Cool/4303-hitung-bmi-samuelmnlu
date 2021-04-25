@@ -20,4 +20,20 @@
         android:textSize="18sp"
         tools:text="@string/saran_ideal" />
 
+    <TextView
+        android:id="@+id/bmiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        tools:text="BMI: 24,09" />
+
+    <TextView
+        android:id="@+id/kategoriTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        tools:text="Kategori: Ideal" />
+
 </LinearLayout>
